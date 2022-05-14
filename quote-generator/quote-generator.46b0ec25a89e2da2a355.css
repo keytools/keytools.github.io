@@ -2404,7 +2404,7 @@ body.hide-menu .menu-with-collapse-button-container {
   display: flex;
   align-items: center;
   max-width: 80rem;
-  margin: 2rem auto 1rem;
+  margin: 3rem auto 1rem;
   background-color: var(--background-color-03);
   border-radius: 0.4rem; }
   .play-stop-controller .icon-button {
@@ -2482,8 +2482,8 @@ body.hide-menu .menu-with-collapse-button-container {
     color: white; }
 
 .progress-bar-container {
-  height: 0.5rem;
-  border-radius: 0.2rem;
+  height: 0.8rem;
+  border-radius: 0.4rem;
   width: 100%;
   background-color: var(--background-color-05);
   position: relative;
@@ -2493,7 +2493,7 @@ body.hide-menu .menu-with-collapse-button-container {
     top: 0;
     left: 0;
     bottom: 0;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     -webkit-animation-name: progress-bar-animation;
             animation-name: progress-bar-animation;
     -webkit-animation-timing-function: linear;
