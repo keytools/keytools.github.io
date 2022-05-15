@@ -2391,30 +2391,13 @@ body.hide-menu .menu-with-collapse-button-container {
     margin-left: 1rem;
     font-size: 2rem; }
 
-
-.tool-header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 1.5rem 0 3rem; }
-  .tool-header-container h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    margin: 0;
-    margin-bottom: 1.2rem;
-    padding: 0 4rem; }
-    .tool-header-container h1::before, .tool-header-container h1::after {
-      display: none; }
-  .tool-header-container h2 {
-    font-size: 1.85rem;
-    font-weight: 400;
-    padding: 0 4rem; }
-
 .random-text-generator-input-container {
   display: grid;
-  grid-template-columns: 10rem 1fr 15rem;
-  grid-column-gap: 1.5rem; }
+  grid-template-columns: 10rem 1fr 3.7rem 3.7rem;
+  grid-column-gap: 1rem;
+  background-color: var(--background-color-03);
+  padding: 0.5rem;
+  border-radius: 0.4rem; }
   .random-text-generator-input-container .increase-decrease-value-container {
     background-color: var(--background-color-03);
     border-radius: 0.5rem;
@@ -2438,6 +2421,33 @@ body.hide-menu .menu-with-collapse-button-container {
     .random-text-generator-input-container input:hover,
     .random-text-generator-input-container select:hover {
       background-color: var(--background-color-04); }
+
+.random-text-generator-output-container {
+  margin-top: 2rem; }
+  .random-text-generator-output-container .generated-text {
+    margin-top: 0.5rem;
+    width: 100%;
+    min-height: 20rem;
+    max-height: 35rem;
+    background-color: var(--background-color-03);
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    padding: 1.3rem;
+    font-family: var(--font-family);
+    white-space: break-spaces;
+    overflow-y: auto; }
+    .random-text-generator-output-container .generated-text::-webkit-scrollbar {
+      width: 1.2em;
+      background-color: var(--background-color-03); }
+    .random-text-generator-output-container .generated-text::-webkit-scrollbar-thumb {
+      border: 0.4em solid transparent;
+      background-clip: padding-box;
+      border-radius: 100rem;
+      background-color: var(--scrollbar-color); }
+  .random-text-generator-output-container .copy-hint {
+    margin-left: 1rem;
+    font-size: 1.35rem;
+    font-weight: 600; }
 
 body select {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiB3aWR0aD0iMS41ZW0iIGhlaWdodD0iMS41ZW0iIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+IDxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEyIDE2YTEgMSAwIDAgMS0uNjQtLjIzbC02LTVhMSAxIDAgMSAxIDEuMjgtMS41NEwxMiAxMy43MWw1LjM2LTQuMzJhMSAxIDAgMCAxIDEuNDEuMTVhMSAxIDAgMCAxLS4xNCAxLjQ2bC02IDQuODNBMSAxIDAgMCAxIDEyIDE2eiIvPiA8L3N2Zz4=); }
@@ -2584,38 +2594,22 @@ select {
       border-left: 1px solid var(--border-color) !important;
       border-right: 1px solid var(--border-color) !important; }
 
-.random-text-generator-output-container {
-  margin-top: 3rem;
-  position: relative; }
-  .random-text-generator-output-container label {
-    font-size: 1.3rem; }
-  .random-text-generator-output-container:hover .icon-button {
-    opacity: 1; }
-  .random-text-generator-output-container .icon-button {
-    opacity: 0;
-    position: absolute;
-    top: 3.4rem;
-    right: 1rem;
-    background-color: var(--button-icon-background-color); }
-    .random-text-generator-output-container .icon-button:hover .iconify {
-      color: var(--primary-color); }
-  .random-text-generator-output-container pre {
-    width: 100%;
-    min-height: 20rem;
-    max-height: 35rem;
-    background-color: var(--background-color-03);
-    border-radius: 0.3rem;
-    font-size: 1.5rem;
-    padding: 1.3rem;
-    font-family: var(--font-family);
-    white-space: break-spaces;
-    overflow-y: auto; }
-    .random-text-generator-output-container pre::-webkit-scrollbar {
-      width: 1.2em;
-      background-color: var(--background-color-03); }
-    .random-text-generator-output-container pre::-webkit-scrollbar-thumb {
-      border: 0.4em solid transparent;
-      background-clip: padding-box;
-      border-radius: 100rem;
-      background-color: var(--scrollbar-color); }
+.tool-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0 3rem; }
+  .tool-header-container h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 1.2rem;
+    padding: 0 4rem; }
+    .tool-header-container h1::before, .tool-header-container h1::after {
+      display: none; }
+  .tool-header-container h2 {
+    font-size: 1.85rem;
+    font-weight: 400;
+    padding: 0 4rem; }
 
