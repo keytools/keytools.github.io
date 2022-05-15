@@ -2493,7 +2493,7 @@ body.hide-menu .menu-with-collapse-button-container {
     top: 0;
     left: 0;
     bottom: 0;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     -webkit-animation-name: progress-bar-animation;
             animation-name: progress-bar-animation;
     -webkit-animation-timing-function: linear;
