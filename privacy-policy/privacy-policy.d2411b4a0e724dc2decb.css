@@ -1986,101 +1986,16 @@ input[type='submit'] {
       opacity: 0.85; }
 
 .main-container {
-  padding-top: 5rem;
-  max-width: 120rem; }
+  padding-top: 0; }
 
-.header {
-  padding: 0 5rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .header p {
-    margin-top: 1rem;
-    font-size: 1.75rem; }
+h1 {
+  margin: 0 0 4rem; }
 
-.tools-summary-mosaic-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
+.main-section {
+  padding: 7rem; }
 
-.tool-summary-square-container {
-  min-width: 25rem;
-  height: 18rem;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.5rem;
-  color: var(--body-color);
-  transition: var(--transition);
-  transition-property: color, background-color;
-  background-color: var(--tool-card-background-color);
-  margin-right: 2rem;
-  margin-bottom: 2rem; }
-  .tool-summary-square-container:hover {
-    text-decoration: none;
-    background-color: var(--tool-card-background-color-on-hover); }
-    .tool-summary-square-container:hover .name {
-      color: var(--secondary-color); }
-  .tool-summary-square-container i {
-    font-size: 5rem;
-    margin-bottom: 2rem;
-    flex-shrink: 0; }
-  .tool-summary-square-container .name {
-    font-weight: 500;
-    color: var(--text-color-04); }
-
-.search-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 5rem;
-  width: 80%; }
-  .search-container .tools-search-input-container {
-    background-color: var(--background-color-01);
-    width: 100%;
-    padding: 0.8rem 1rem 0.8rem 2rem;
-    border-radius: 100rem; }
-    .search-container .tools-search-input-container:hover {
-      background-color: var(--background-color-01);
-      border-color: var(--focus-color); }
-    .search-container .tools-search-input-container input {
-      flex: 1;
-      font-size: 1.5rem; }
-
-body {
-  --tools-search-input-container-background-color: var(--background-color-03);
-  --tools-search-input-container-background-color-on-hover: var(--background-color-04); }
-
-body.dark {
-  --tools-search-input-container-background-color: var(--background-color-03);
-  --tools-search-input-container-background-color-on-hover: var(--background-color-04); }
-
-.tools-search-input-container {
-  background-color: var(--tools-search-input-container-background-color);
-  border-radius: 0.4rem;
-  padding: 0 1.2rem 0 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none !important;
-  transition: all 0.2s ease-in;
-  transition-property: background-color; }
-  .tools-search-input-container:hover, .tools-search-input-container.focus {
-    background-color: var(--tools-search-input-container-background-color-on-hover) !important; }
-  .tools-search-input-container .iconify {
-    flex-shrink: 0;
-    margin-right: 0.7rem;
-    font-size: 1.7rem; }
-  .tools-search-input-container input {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    width: 30rem;
-    transition: width 0.25s linear; }
-  .tools-search-input-container.focus input {
-    width: 40rem; }
+h2 {
+  margin: 4rem 0; }
 
 .icon-button {
   all: initial;
@@ -2144,20 +2059,40 @@ body.dark {
       box-shadow: var(--box-shadow-01); }
 
 footer {
-  color: var(--footer-color);
-  background-color: var(--footer-background-color);
-  transition: var(--transition);
-  transition-property: color, background-color;
-  padding: var(--footer-padding);
-  height: var(--footer-height);
+  background-color: var(--background-color-01);
+  padding: 3rem 0;
   display: flex;
-  align-items: center; }
-  footer a,
-  footer p {
-    font-size: 1.35rem; }
-  footer p {
-    margin: 0;
-    margin-left: 5rem; }
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  footer .logo {
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none; }
+    footer .logo img {
+      height: 2rem; }
+    footer .logo span {
+      margin-left: 1.5rem;
+      color: var(--navbar-logo-text-color); }
+  footer .links {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem; }
+    footer .links a {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--text-color-04);
+      transition: var(--transition);
+      transition-property: color, background-color; }
+      footer .links a:hover {
+        color: var(--text-color-02);
+        text-decoration: none; }
+  footer .all-right-reserved {
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin: 0.8rem 0 0; }
 
 body {
   --navbar-separator-background-color: var(--background-color-05); }
@@ -2265,6 +2200,39 @@ nav .right {
   border-radius: 100rem;
   background-color: var(--navbar-separator-background-color);
   margin: 0px 25px; }
+
+body {
+  --tools-search-input-container-background-color: var(--background-color-03);
+  --tools-search-input-container-background-color-on-hover: var(--background-color-04); }
+
+body.dark {
+  --tools-search-input-container-background-color: var(--background-color-03);
+  --tools-search-input-container-background-color-on-hover: var(--background-color-04); }
+
+.tools-search-input-container {
+  background-color: var(--tools-search-input-container-background-color);
+  border-radius: 0.4rem;
+  padding: 0 1.2rem 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  transition: all 0.2s ease-in;
+  transition-property: background-color; }
+  .tools-search-input-container:hover, .tools-search-input-container.focus {
+    background-color: var(--tools-search-input-container-background-color-on-hover) !important; }
+  .tools-search-input-container .iconify {
+    flex-shrink: 0;
+    margin-right: 0.7rem;
+    font-size: 1.7rem; }
+  .tools-search-input-container input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 30rem;
+    transition: width 0.25s linear; }
+  .tools-search-input-container.focus input {
+    width: 40rem; }
 
 body {
   --menu-background-color: var(--background-color-01);
@@ -2445,6 +2413,7 @@ body.hide-menu .menu-with-collapse-button-container {
   margin-top: 1.5rem;
   font-weight: 600;
   background-color: var(--background-color-03);
+  color: var(--text-color-03);
   transition: var(--transition);
   transition-property: color, background-color; }
   .more-tools-button:hover {
