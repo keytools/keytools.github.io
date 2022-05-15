@@ -2400,7 +2400,7 @@ body.hide-menu .menu-with-collapse-button-container {
 
 .play-stop-controller {
   height: 5rem;
-  padding: 0 2rem;
+  padding: 0 0.7rem;
   display: flex;
   align-items: center;
   max-width: 80rem;
@@ -2410,7 +2410,7 @@ body.hide-menu .menu-with-collapse-button-container {
   .play-stop-controller .icon-button {
     width: 4.5rem; }
   .play-stop-controller .progress-bar-container {
-    margin-left: 2rem; }
+    margin: 0 1rem; }
 
 .tool-header-container {
   display: flex;
