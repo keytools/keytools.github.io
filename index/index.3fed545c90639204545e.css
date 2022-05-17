@@ -2237,6 +2237,10 @@ nav {
   nav.shadow {
     box-shadow: var(--navbar-box-shadow); }
 
+@media screen and (max-width: 426px) {
+  nav {
+    height: 8rem; } }
+
 nav .left {
   flex-grow: 1;
   flex-basis: 0;
