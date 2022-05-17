@@ -2004,17 +2004,17 @@ input[type='submit'] {
     input[type='submit'].secondary:hover {
       opacity: 0.85; }
 
-.tool-container {
-  position: relative; }
+.main-container {
+  padding-top: 0; }
 
-.coming-soon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 4rem;
-  font-weight: 200;
-  text-transform: uppercase; }
+h1 {
+  margin: 0 0 4rem; }
+
+.main-section {
+  padding: 7rem; }
+
+h2 {
+  margin: 4rem 0; }
 
 .icon-button {
   all: initial;
@@ -2222,11 +2222,11 @@ nav .right {
 
 @media screen and (max-width: 426px) {
   nav {
-    height: 9rem; }
+    height: 8.5rem; }
   nav .left img {
     height: 2rem; }
   nav .left span {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-left: 1rem; } }
 
 body {
