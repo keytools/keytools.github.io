@@ -2239,7 +2239,7 @@ nav {
 
 @media screen and (max-width: 426px) {
   nav {
-    height: 8rem; } }
+    height: 10rem; } }
 
 nav .left {
   flex-grow: 1;
