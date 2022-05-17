@@ -537,6 +537,14 @@ li {
   .related-articles-main-section {
     display: block; } }
 
+@media screen and (max-width: 426px) {
+  .page-container {
+    padding-left: 0;
+    padding-right: 0; }
+  .main-section {
+    border-radius: 0;
+    padding: 3rem; } }
+
 @font-face {
   font-family: 'Anonymous Pro';
   font-style: normal;
