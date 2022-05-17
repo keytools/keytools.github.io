@@ -2413,7 +2413,8 @@ body.hide-menu .menu-with-collapse-button-container {
   color: var(--menu-item-color);
   transition: var(--transition);
   flex-shrink: 0;
-  background-color: var(--background-color-03); }
+  background-color: var(--background-color-03);
+  min-width: 0; }
   .related-tools-item-container:hover {
     text-decoration: none;
     background-color: var(--background-color-04); }
@@ -2421,7 +2422,9 @@ body.hide-menu .menu-with-collapse-button-container {
     font-size: 1.45rem;
     font-weight: 500;
     white-space: nowrap;
-    margin-left: 1.5rem; }
+    margin-left: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis; }
   .related-tools-item-container i {
     flex-shrink: 0;
     font-size: 2rem; }
