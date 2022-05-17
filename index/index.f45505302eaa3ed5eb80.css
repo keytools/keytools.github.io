@@ -2237,10 +2237,6 @@ nav {
   nav.shadow {
     box-shadow: var(--navbar-box-shadow); }
 
-@media screen and (max-width: 426px) {
-  nav {
-    height: 10rem; } }
-
 nav .left {
   flex-grow: 1;
   flex-basis: 0;
@@ -2324,6 +2320,15 @@ nav .right {
   border-radius: 100rem;
   background-color: var(--navbar-separator-background-color);
   margin: 0px 25px; }
+
+@media screen and (max-width: 426px) {
+  nav {
+    height: 10rem; }
+  nav .left img {
+    height: 3rem; }
+  nav .left span {
+    font-size: 2.3rem;
+    margin-left: 1rem; } }
 
 body {
   --menu-background-color: var(--background-color-01);
