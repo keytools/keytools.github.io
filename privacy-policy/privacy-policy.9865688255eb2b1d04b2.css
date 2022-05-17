@@ -528,6 +528,15 @@ li {
     font-size: 2rem;
     margin-bottom: 1rem; }
 
+.related-articles-main-section {
+  display: none; }
+
+@media screen and (max-width: 1024px) {
+  .related-tools-sidebar-container {
+    display: none !important; }
+  .related-articles-main-section {
+    display: block; } }
+
 @font-face {
   font-family: 'Anonymous Pro';
   font-style: normal;
