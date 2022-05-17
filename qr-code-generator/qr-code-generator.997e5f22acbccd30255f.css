@@ -2222,7 +2222,7 @@ nav .right {
 
 @media screen and (max-width: 426px) {
   nav {
-    height: 10rem; }
+    height: 8rem; }
   nav .left img {
     height: 3rem; }
   nav .left span {
