@@ -3042,7 +3042,7 @@ select {
     background-color: var(--arrow-background-color);
     display: flex;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.2rem;
     border-radius: 100rem;
     box-shadow: var(--box-shadow-01); }
   .training-container2 .arrow-left {
@@ -3051,7 +3051,7 @@ select {
     right: 1.2rem; }
   .training-container2 .arrow-left,
   .training-container2 .arrow-right {
-    font-size: 3.7rem; }
+    font-size: 2.8rem; }
 
 .training-container1 {
   margin-top: 3rem;
@@ -3071,7 +3071,7 @@ select {
   flex-shrink: 0;
   border-radius: 0.3rem;
   width: 8rem;
-  height: 8rem;
+  height: 4.5rem;
   background-color: var(--training-keys-background-color);
   border: 2px solid transparent;
   margin-right: 0.5rem;
@@ -3097,7 +3097,7 @@ select {
     font-weight: bold;
     color: var(--typed-key-avg-wpm-color); }
   .training-lesson-container .lesson-label {
-    font-weight: bold;
+    font-weight: 500;
     font-size: 2rem; }
 
 @media screen and (max-width: 1200px) {
