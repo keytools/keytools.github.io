@@ -2009,17 +2009,6 @@ input[type='submit'] {
 .tool-header-container {
   margin-bottom: 2rem !important; }
 
-.typed-keys-stats-container,
-.turbo-typing-action-bar-container,
-.training-container2 {
-  margin-left: 8rem;
-  margin-right: 8rem; }
-  @media screen and (max-width: 426px) {
-    .typed-keys-stats-container,
-    .turbo-typing-action-bar-container,
-    .training-container2 {
-      margin: 0; } }
-
 .icon-button {
   all: initial;
   cursor: pointer;
@@ -2986,7 +2975,6 @@ select {
       box-shadow: var(--focus-box-shadow-secondary); }
 
 .typed-keys-stats-container-container {
-  max-width: 78rem;
   margin: 0 auto; }
 
 .typed-keys-stats-container {
