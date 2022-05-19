@@ -71,7 +71,7 @@ body {
   --code-title-color: #c18401;
   --code-attr-color: #986801;
   --typed-key-stats-border-background-color: var(--body-background-color);
-  --typed-key-no-data-available-yet: var(--background-color-04);
+  --typed-key-no-data-available-yet: var(--background-color-03);
   --typed-key-avg-wpm-lt-10: rgb(159, 201, 110);
   --typed-key-avg-wpm-lt-20: rgb(151, 189, 143);
   --typed-key-avg-wpm-lt-30: rgb(122, 194, 134);
@@ -2006,25 +2006,36 @@ input[type='submit'] {
     input[type='submit'].secondary:hover {
       opacity: 0.85; }
 
-.main-container {
-  padding-top: 0; }
+.action-bar .increase-decrease-value-container {
+  background-color: var(--background-color-03);
+  border-radius: 0.5rem;
+  border-color: transparent;
+  height: 100%; }
+  .action-bar .increase-decrease-value-container input {
+    height: 100%;
+    background-color: var(--background-color-03); }
+    .action-bar .increase-decrease-value-container input:hover {
+      background-color: var(--background-color-04); }
+  .action-bar .increase-decrease-value-container .increase-value,
+  .action-bar .increase-decrease-value-container .decrease-value {
+    display: flex;
+    align-items: center;
+    height: 100%; }
+    .action-bar .increase-decrease-value-container .increase-value:hover,
+    .action-bar .increase-decrease-value-container .decrease-value:hover {
+      background-color: var(--background-color-04); }
 
-h1 {
-  margin: 0 0 2rem; }
+.tool-container {
+  position: relative; }
 
-.main-section {
-  padding: 7rem; }
-
-.contact-container .buttons-container {
-  display: flex;
-  justify-content: end; }
-  .contact-container .buttons-container input {
-    flex: 0;
-    margin-left: 1.5rem; }
-
-.contact-container input,
-.contact-container textarea {
-  margin-bottom: 2rem; }
+.coming-soon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  font-weight: 200;
+  text-transform: uppercase; }
 
 .icon-button {
   all: initial;
@@ -2510,27 +2521,4 @@ body.hide-menu .menu-with-collapse-button-container {
   position: -webkit-sticky;
   position: sticky;
   top: 10rem; }
-
-.toast-container {
-  z-index: var(--toast-z-index);
-  position: fixed;
-  top: calc(var(--navbar-height) + 1.5rem);
-  right: -30rem;
-  width: 30rem;
-  border-radius: 0.3rem;
-  transition: right 0.3s ease-in;
-  padding: 0.8rem 1.5rem;
-  font-size: 1.5rem; }
-  .toast-container.info {
-    background-color: var(--toast-info-background-color);
-    color: var(--toast-info-color);
-    border: 1px solid var(--toast-info-border-color); }
-  .toast-container.warn {
-    background-color: var(--toast-warn-background-color);
-    color: var(--toast-warn-color);
-    border: 1px solid var(--toast-warn-border-color); }
-  .toast-container.error {
-    background-color: var(--toast-error-background-color);
-    color: var(--toast-error-color);
-    border: 1px solid var(--toast-error-border-color); }
 
