@@ -3526,28 +3526,3 @@ select {
     font-weight: 400;
     padding: 0 4rem; }
 
-.ads-blocker-message-container {
-  z-index: var(--ads-blocker-message-z-index);
-  position: fixed;
-  top: calc(2rem + var(--navbar-height));
-  width: 55rem;
-  max-width: 80%;
-  right: -100%;
-  padding: 4rem;
-  background: var(--ads-blocker-message-container-background-color);
-  transition: 1.5s;
-  box-shadow: var(--box-shadow-02);
-  border-radius: 0.3rem; }
-  .ads-blocker-message-container.active {
-    right: 2rem; }
-  .ads-blocker-message-container .ads-blocker-message-left {
-    margin-right: 10rem; }
-  .ads-blocker-message-container .ads-blocker-message-header {
-    font-weight: bold;
-    font-size: 2.8rem;
-    margin-bottom: 1.5rem;
-    color: var(--ads-blocker-message-header-color); }
-  .ads-blocker-message-container p {
-    font-size: 1.5rem;
-    color: var(--ads-blocker-message-body-color); }
-
