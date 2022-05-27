@@ -2569,7 +2569,8 @@ body.hide-menu .menu-with-collapse-button-container {
     background-color: var(--background-color-01) !important;
     padding: 0.4rem 1rem !important;
     font-size: 1.3rem;
-    border-radius: .8rem !important; }
+    border-radius: .8rem !important;
+    height: 100% !important; }
   .entries-form button {
     align-self: stretch;
     padding: .3rem .8rem !important;
