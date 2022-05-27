@@ -352,6 +352,7 @@ body {
   --page-width: 68%;
   --main-margin: 0 3rem;
   --ads-width: 20rem;
+  --dialog-z-index: 13;
   --select-z-index: 12;
   --toast-z-index: 11;
   --side-panel-z-index: 10;
@@ -360,7 +361,6 @@ body {
   --color-picker-z-index: 7;
   --ads-blocker-message-z-index: 6;
   --buy-me-a-coffee-z-index: 5;
-  --dialog-z-index: 3;
   --text-to-type-training-arrow-z-index: 2;
   --toggle-typing-button-z-index: 1; }
   @media screen and (max-width: 426px) {
