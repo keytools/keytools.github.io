@@ -2660,10 +2660,12 @@ body.hide-menu .menu-with-collapse-button-container {
   justify-content: center;
   margin-bottom: 1rem;
   padding: 1.3rem;
-  font-size: 1.5rem;
-  color: var(--text-color-03);
-  background-color: var(--background-color-01);
   border-radius: .5rem; }
+  .winner.initial {
+    font-size: 1.5rem !important;
+    font-weight: 400 !important;
+    color: var(--text-color-03) !important;
+    background-color: var(--background-color-01) !important; }
   .winner .iconify {
     cursor: initial;
     font-size: 1.6rem;
@@ -2700,7 +2702,7 @@ body.hide-menu .menu-with-collapse-button-container {
   .wheel-container .tick {
     position: absolute;
     top: 50%;
-    right: -2rem;
-    transform: translateY(-50%) rotate(51deg);
-    font-size: 3rem; }
+    right: -1rem;
+    transform: translateY(-50%) rotate(90deg);
+    font-size: 2.7rem; }
 
