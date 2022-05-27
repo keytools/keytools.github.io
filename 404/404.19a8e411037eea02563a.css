@@ -2492,9 +2492,9 @@ body.hide-menu .menu-with-collapse-button-container {
     background: linear-gradient(to right, #f8c417, #e61972);
     color: white;
     font-weight: 600;
-    padding: 0.2rem 1.2rem;
+    padding: 0.2rem 1rem;
     font-size: 1.2rem;
-    border-radius: 100rem; }
+    border-radius: .6rem; }
 
 .more-tools-button {
   all: initial;
@@ -2591,9 +2591,9 @@ body.hide-menu .menu-with-collapse-button-container {
     background: linear-gradient(to right, #f8c417, #e61972);
     color: white;
     font-weight: 600;
-    padding: 0.2rem 1.2rem;
+    padding: 0.2rem 1rem;
     font-size: 1.2rem;
-    border-radius: 100rem; }
+    border-radius: .5rem; }
 
 .search-container {
   display: flex;
