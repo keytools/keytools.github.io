@@ -2533,7 +2533,15 @@ body.hide-menu .menu-with-collapse-button-container {
   align-items: center; }
 
 @media screen and (max-width: 769px) {
-  .entries-container {
+  .entries-container-big-screens {
+    display: none; }
+  .entries-container-small-screens .entries-container {
+    margin: 0;
+    margin-top: 4rem;
+    padding: 1rem; } }
+
+@media screen and (min-width: 769px) {
+  .entries-container-small-screens {
     display: none; } }
 
 .tool-header-container {
@@ -2569,6 +2577,8 @@ body.hide-menu .menu-with-collapse-button-container {
   .entries-form .input-container,
   .entries-form .button-container {
     align-self: stretch; }
+  .entries-form .input-container {
+    flex: 1; }
   .entries-form input {
     background-color: var(--background-color-01) !important;
     padding: 0.4rem 1rem !important;
