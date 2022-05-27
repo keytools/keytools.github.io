@@ -2439,6 +2439,7 @@ body.hide-menu .menu-with-collapse-button-container {
   row-gap: 0.7rem; }
 
 .related-tools-item-container {
+  position: relative;
   border-radius: 0.4rem;
   display: flex;
   align-items: center;
@@ -2461,6 +2462,16 @@ body.hide-menu .menu-with-collapse-button-container {
   .related-tools-item-container i {
     flex-shrink: 0;
     font-size: 2rem; }
+  .related-tools-item-container .tag {
+    position: absolute;
+    top: .4rem;
+    right: .4rem;
+    background: linear-gradient(to right, #f8c417, #e61972);
+    color: white;
+    font-weight: 600;
+    padding: 0.2rem 1.2rem;
+    font-size: 1.2rem;
+    border-radius: 100rem; }
 
 .more-tools-button {
   all: initial;

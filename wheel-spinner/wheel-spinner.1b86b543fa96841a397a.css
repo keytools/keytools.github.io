@@ -2030,26 +2030,6 @@ input[type='submit'] {
     .action-bar .increase-decrease-value-container .decrease-value:hover {
       background-color: var(--background-color-04); }
 
-.main-container {
-  padding-top: 0; }
-
-h1 {
-  margin: 0 0 2rem; }
-
-.main-section {
-  padding: 7rem; }
-
-.contact-container .buttons-container {
-  display: flex;
-  justify-content: end; }
-  .contact-container .buttons-container input {
-    flex: 0;
-    margin-left: 1.5rem; }
-
-.contact-container input,
-.contact-container textarea {
-  margin-bottom: 2rem; }
-
 .icon-button {
   all: initial;
   cursor: pointer;
@@ -2458,6 +2438,7 @@ body.hide-menu .menu-with-collapse-button-container {
   row-gap: 0.7rem; }
 
 .related-tools-item-container {
+  position: relative;
   border-radius: 0.4rem;
   display: flex;
   align-items: center;
@@ -2480,6 +2461,16 @@ body.hide-menu .menu-with-collapse-button-container {
   .related-tools-item-container i {
     flex-shrink: 0;
     font-size: 2rem; }
+  .related-tools-item-container .tag {
+    position: absolute;
+    top: .4rem;
+    right: .4rem;
+    background: linear-gradient(to right, #f8c417, #e61972);
+    color: white;
+    font-weight: 600;
+    padding: 0.2rem 1.2rem;
+    font-size: 1.2rem;
+    border-radius: 100rem; }
 
 .more-tools-button {
   all: initial;
@@ -2535,26 +2526,171 @@ body.hide-menu .menu-with-collapse-button-container {
   position: sticky;
   top: 10rem; }
 
-.toast-container {
-  z-index: var(--toast-z-index);
-  position: fixed;
-  top: calc(var(--navbar-height) + 1.5rem);
-  right: -30rem;
-  width: 30rem;
-  border-radius: 0.3rem;
-  transition: right 0.3s ease-in;
-  padding: 0.8rem 1.5rem;
+.wheel-spinner-container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.tool-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0 3rem; }
+  .tool-header-container h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 1.2rem;
+    padding: 0 4rem; }
+    .tool-header-container h1::before, .tool-header-container h1::after {
+      display: none; }
+  .tool-header-container h2 {
+    font-size: 1.85rem;
+    font-weight: 400;
+    padding: 0 4rem; }
+
+.entries-container {
+  padding: 1rem;
+  border-radius: .6rem;
+  background-color: var(--background-color-03);
+  margin-right: 1rem; }
+
+.entries-form {
+  display: flex;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  margin-bottom: 1rem; }
+  .entries-form .input-container,
+  .entries-form .button-container {
+    align-self: stretch; }
+  .entries-form input {
+    background-color: var(--background-color-01) !important;
+    padding: 0.4rem 1rem !important;
+    font-size: 1.3rem;
+    border-radius: .8rem !important; }
+  .entries-form button {
+    align-self: stretch;
+    padding: .3rem .8rem !important;
+    border-radius: .8rem !important;
+    font-size: 1.3rem !important;
+    font-weight: 500 !important; }
+
+.entry-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem .8rem;
+  border-radius: 0.3rem; }
+  .entry-container:nth-child(odd) {
+    background-color: var(--background-color-01); }
+  .entry-container .entry {
+    font-size: 1.3rem; }
+  .entry-container .icon-button {
+    opacity: 0;
+    height: 2rem;
+    width: 2rem; }
+  .entry-container:hover .icon-button {
+    opacity: 1; }
+
+.entries {
+  height: 20rem;
+  overflow: auto; }
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative; }
+  .input-container .input {
+    padding: 0.8rem 1rem;
+    border: none;
+    outline: none;
+    color: var(--input-color);
+    background-color: var(--input-background-color);
+    border-radius: 0.3rem;
+    width: 100%; }
+    .input-container .input:hover {
+      background-color: var(--input-background-color-on-hover); }
+  .input-container .input-error-message {
+    display: none; }
+  .input-container.error .input-error-message {
+    position: absolute;
+    bottom: -1.6rem;
+    display: inline;
+    font-size: 1.2rem;
+    color: var(--error-message-color);
+    font-style: italic; }
+  .input-container.error .input {
+    border-color: var(--error-message-color); }
+
+.input-label {
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 100rem; }
+
+.input-label-mandatory {
+  color: #ff4a59;
   font-size: 1.5rem; }
-  .toast-container.info {
-    background-color: var(--toast-info-background-color);
-    color: var(--toast-info-color);
-    border: 1px solid var(--toast-info-border-color); }
-  .toast-container.warn {
-    background-color: var(--toast-warn-background-color);
-    color: var(--toast-warn-color);
-    border: 1px solid var(--toast-warn-border-color); }
-  .toast-container.error {
-    background-color: var(--toast-error-background-color);
-    color: var(--toast-error-color);
-    border: 1px solid var(--toast-error-border-color); }
+
+.button-container button {
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  border: 2px solid transparent;
+  font-weight: bold;
+  transition: var(--transition);
+  transition-property: opacity; }
+  .button-container button.primary {
+    background-color: var(--primary-color);
+    color: var(--white-color); }
+    .button-container button.primary:hover {
+      opacity: 0.85; }
+  .button-container button.secondary {
+    background-color: var(--button-secondary-background-color);
+    color: var(--button-secondary-color); }
+    .button-container button.secondary:hover {
+      opacity: 0.85; }
+
+.winner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  padding: 1.3rem;
+  font-size: 1.5rem;
+  color: var(--text-color-03);
+  background-color: var(--background-color-01);
+  border-radius: .5rem; }
+  .winner .iconify {
+    cursor: initial;
+    font-size: 1.6rem;
+    margin: 0 .5rem; }
+
+.wheel-container {
+  flex: 1;
+  position: relative; }
+  .wheel-container .icon-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    background-color: #348EF6 !important;
+    border-radius: 100%;
+    padding: 1.3rem;
+    box-shadow: var(--box-shadow-02); }
+    .wheel-container .icon-button .iconify {
+      font-size: 3.2rem;
+      color: white;
+      transition: var(--transition);
+      transition-property: font-size; }
+    .wheel-container .icon-button:hover .iconify {
+      font-size: 4.2rem; }
+  .wheel-container .tick {
+    position: absolute;
+    top: 50%;
+    right: -2rem;
+    transform: translateY(-50%) rotate(51deg);
+    font-size: 3rem; }
 
