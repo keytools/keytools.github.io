@@ -58,6 +58,7 @@ body {
   --text-to-type-reference-color: var(--primary-color);
   --input-color: var(--body-color);
   --input-background-color: var(--background-color-03);
+  --input-background-color-on-hover: var(--background-color-04);
   --select-background-color: var(--background-color-04);
   --select-background-color-on-hover: var(--background-color-05);
   --input-border-color: var(--border-color);
@@ -217,6 +218,7 @@ body.dark {
   --text-to-type-reference-color: var(--primary-color);
   --input-color: var(--body-color);
   --input-background-color: var(--background-color-03);
+  --input-background-color-on-hover: var(--background-color-04);
   --select-background-color: var(--background-color-04);
   --select-background-color-on-hover: var(--background-color-05);
   --input-border-color: var(--border-color);
@@ -430,6 +432,9 @@ p {
 
 .overflow-hidden {
   overflow: hidden; }
+
+.flex {
+  display: flex; }
 
 .pre-load {
   background: var(--pre-load-background);
