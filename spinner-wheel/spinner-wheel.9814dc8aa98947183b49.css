@@ -2624,7 +2624,9 @@ body.hide-menu .menu-with-collapse-button-container {
   .entry-container:nth-child(odd) {
     background-color: var(--background-color-01); }
   .entry-container .entry {
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    overflow: hidden;
+    text-overflow: ellipsis; }
   .entry-container .icon-button {
     opacity: 0;
     height: 2rem;
@@ -2858,7 +2860,12 @@ body.hide-menu .menu-with-collapse-button-container {
     font-weight: 600;
     color: white; }
   .wheel-spinner-action-bar-container.winner-action-bar .iconify {
-    color: white; }
+    color: white;
+    opacity: .75;
+    transition: var(--transition);
+    transition-property: opacity; }
+    .wheel-spinner-action-bar-container.winner-action-bar .iconify:hover {
+      opacity: 1; }
   .wheel-spinner-action-bar-container.winner-action-bar .icon-button:hover {
     background-color: transparent; }
   .wheel-spinner-action-bar-container.winner-action-bar .copy-winner-icon {
