@@ -2820,3 +2820,12 @@ body.hide-menu .menu-with-collapse-button-container {
   .dialog {
     --dialog-width: 80%; } }
 
+.fireworks-background {
+  pointer-events: none;
+  z-index: calc(var(--dialog-z-index) - 1);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
