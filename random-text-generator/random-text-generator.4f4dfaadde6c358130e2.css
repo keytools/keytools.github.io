@@ -2011,24 +2011,31 @@ input[type='submit'] {
     input[type='submit'].secondary:hover {
       opacity: 0.85; }
 
-.action-bar .increase-decrease-value-container {
+.action-bar {
   background-color: var(--background-color-03);
-  border-radius: 0.5rem;
-  border-color: transparent;
-  height: 100%; }
-  .action-bar .increase-decrease-value-container input {
-    height: 100%;
-    background-color: var(--background-color-03); }
-    .action-bar .increase-decrease-value-container input:hover {
-      background-color: var(--background-color-04); }
-  .action-bar .increase-decrease-value-container .increase-value,
-  .action-bar .increase-decrease-value-container .decrease-value {
+  border-radius: .4rem;
+  padding: 1rem; }
+  .action-bar .buttons {
     display: flex;
-    align-items: center;
+    align-items: center; }
+  .action-bar .increase-decrease-value-container {
+    background-color: var(--background-color-03);
+    border-radius: 0.5rem;
+    border-color: transparent;
     height: 100%; }
-    .action-bar .increase-decrease-value-container .increase-value:hover,
-    .action-bar .increase-decrease-value-container .decrease-value:hover {
-      background-color: var(--background-color-04); }
+    .action-bar .increase-decrease-value-container input {
+      height: 100%;
+      background-color: var(--background-color-03); }
+      .action-bar .increase-decrease-value-container input:hover {
+        background-color: var(--background-color-04); }
+    .action-bar .increase-decrease-value-container .increase-value,
+    .action-bar .increase-decrease-value-container .decrease-value {
+      display: flex;
+      align-items: center;
+      height: 100%; }
+      .action-bar .increase-decrease-value-container .increase-value:hover,
+      .action-bar .increase-decrease-value-container .decrease-value:hover {
+        background-color: var(--background-color-04); }
 
 
 .icon-button {
