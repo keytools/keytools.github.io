@@ -366,15 +366,15 @@ body {
   @media screen and (max-width: 426px) {
     html,
     body {
-      --font-size: 54%; } }
+      --font-size: 56%; } }
   @media screen and (min-width: 427px) and (max-width: 768px) {
     html,
     body {
-      --font-size: 54%; } }
+      --font-size: 58%; } }
   @media screen and (min-width: 769px) and (max-width: 1024px) {
     html,
     body {
-      --font-size: 58%; } }
+      --font-size: 60%; } }
   @media screen and (min-width: 1025px) and (max-width: 1920px) {
     html,
     body {
