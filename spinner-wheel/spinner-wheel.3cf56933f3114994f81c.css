@@ -2038,7 +2038,7 @@ input[type='submit'] {
         background-color: var(--background-color-04); }
 
 :root {
-  --tool-max-width: 72rem; }
+  --tool-max-width: 78rem; }
 
 .icon-button {
   all: initial;
@@ -2560,7 +2560,7 @@ body.hide-menu .menu-with-collapse-button-container {
     display: none; }
   .choices-container-big-screens {
     max-width: 40rem;
-    min-width: 27rem; } }
+    min-width: 30rem; } }
 
 .tool-header-container {
   display: flex;
