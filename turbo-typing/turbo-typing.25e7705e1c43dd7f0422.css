@@ -352,7 +352,7 @@ body {
   --page-width: 68%;
   --main-margin: 0 3rem;
   --ads-width: 20rem;
-  --dialog-z-index: 13;
+  --dialog-z-index: 100;
   --select-z-index: 12;
   --toast-z-index: 11;
   --side-panel-z-index: 10;
