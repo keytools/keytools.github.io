@@ -2677,6 +2677,9 @@ select {
   .transparent-select-container .select-option:focus {
     background-color: var(--select-option-background-color-on-hover); }
 
+.tabs-container {
+  position: relative; }
+
 .tabs-names-container {
   display: flex;
   margin-bottom: 1.8rem;
