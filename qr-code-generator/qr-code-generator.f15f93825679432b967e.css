@@ -2630,15 +2630,18 @@ body.hide-menu .menu-with-collapse-button-container {
   border: 1px solid var(--border-color);
   border-radius: 0.3rem; }
 
-.qr-code-image-container .icon-button {
+.qr-code-image-container button {
+  font-size: 1.45rem;
+  padding: .4rem 1rem;
+  font-family: var(--font-family);
   position: absolute;
   top: 0.7rem;
   right: 0.7rem;
   transition: var(--transition);
+  transition-property: background-color;
   height: 3.1rem !important; }
-
-.qr-code-image-container:hover .icon-button {
-  opacity: 1; }
+  .qr-code-image-container button:hover {
+    background-color: var(--background-color-04); }
 
 .toast-container {
   z-index: var(--toast-z-index);
@@ -2671,6 +2674,7 @@ body.hide-menu .menu-with-collapse-button-container {
 .qr-code-url-input-container {
   height: 100%; }
 
+.qr-code-wifi-input-container label,
 .qr-code-email-input-container label {
   font-size: 1.1rem; }
 
