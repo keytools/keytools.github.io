@@ -1939,10 +1939,14 @@ form input,
 form textarea,
 form select {
   margin-bottom: 1.5rem;
-  background-color: var(--background-color-03); }
-  form input:hover,
+  background-color: var(--background-color-03);
+  transition: var(--transition);
+  transition-property: color, background-color; }
+  form input:hover, form input:focus,
   form textarea:hover,
-  form select:hover {
+  form textarea:focus,
+  form select:hover,
+  form select:focus {
     background-color: var(--background-color-04); }
 
 form label {
@@ -1967,7 +1971,7 @@ input,
 textarea {
   display: block;
   background-color: var(--background-color-03);
-  border: 2px solid transparent;
+  border: none;
   border-radius: 0.3rem;
   width: 100%;
   font-size: 1.5rem;
@@ -1975,9 +1979,22 @@ textarea {
   transition: var(--transition);
   transition-property: color, background-color;
   resize: vertical;
-  font-family: var(--font-family); }
-  input:hover,
-  textarea:hover {
+  font-family: var(--font-family);
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  /* Hide scrollbar for Chrome, Safari and Opera */ }
+  input::-webkit-scrollbar,
+  textarea::-webkit-scrollbar {
+    display: none; }
+  input:hover::-webkit-scrollbar,
+  textarea:hover::-webkit-scrollbar {
+    display: initial; }
+  input:hover, input:focus,
+  textarea:hover,
+  textarea:focus {
     background-color: var(--background-color-04); }
 
 button,
@@ -3019,7 +3036,7 @@ body.hide-menu .menu-with-collapse-button-container {
     padding: 0 4rem; }
     .tool-header-container h1::before, .tool-header-container h1::after {
       display: none; }
-    @media only screen and (max-width: 426px) {
+    @media only screen and (max-width: 700px) {
       .tool-header-container h1 {
         font-size: 3.6rem; } }
   .tool-header-container h2 {
