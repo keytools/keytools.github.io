@@ -2059,6 +2059,9 @@ input[type='submit'] {
 .tool-header-container {
   margin-bottom: 2rem !important; }
 
+.description-container li {
+  margin-bottom: 1rem; }
+
 .icon-button {
   all: initial;
   cursor: pointer;
