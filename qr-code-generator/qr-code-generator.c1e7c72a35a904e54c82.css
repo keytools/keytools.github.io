@@ -2634,6 +2634,7 @@ body.hide-menu .menu-with-collapse-button-container {
 .qr-code-generator-tab-container {
   display: flex; }
   .qr-code-generator-tab-container .qr-code-image-container {
+    flex-basis: 30rem;
     flex-shrink: 0;
     flex-grow: 0;
     margin-left: 1.5rem; }
@@ -2686,6 +2687,17 @@ body.hide-menu .menu-with-collapse-button-container {
 
 .qr-code-input-container {
   flex: 1; }
+  .qr-code-input-container textarea {
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    /* Hide scrollbar for Chrome, Safari and Opera */ }
+    .qr-code-input-container textarea::-webkit-scrollbar {
+      display: none; }
+    .qr-code-input-container textarea:hover::-webkit-scrollbar {
+      display: initial; }
 
 .qr-code-telephone-input-container,
 .qr-code-text-input-container,
