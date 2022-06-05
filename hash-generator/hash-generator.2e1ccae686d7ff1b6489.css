@@ -2628,14 +2628,20 @@ textarea {
     cursor: pointer; }
 
 .calculated-hash-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.4rem 1rem;
+  padding: 0.6rem 1rem;
   border-radius: 0.4rem;
   background-color: var(--background-color-03);
-  -moz-column-gap: 2rem;
-       column-gap: 2rem; }
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0.5rem;
+  min-width: 0; }
+  .calculated-hash-container .calculated-hash-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    min-width: 0; }
   .calculated-hash-container .icon-button {
     opacity: 0; }
   .calculated-hash-container:hover .icon-button {
@@ -2658,6 +2664,7 @@ textarea {
       display: initial; }
   .calculated-hash-container .algo,
   .calculated-hash-container .value {
+    white-space: nowrap;
     font-size: 1.45rem; }
   .calculated-hash-container .algo {
     font-weight: 600;
@@ -2666,7 +2673,51 @@ textarea {
     padding: 0rem 0.8rem;
     border-radius: 0.5rem; }
   .calculated-hash-container .value {
-    font-family: 'Roboto Mono'; }
+    font-family: 'Roboto Mono';
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .calculated-hash-container .calculated-hash-bottom-container input {
+    margin: 0;
+    background-color: var(--background-color-04);
+    font-size: 1.45rem;
+    padding: 0.4rem 1rem; }
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative; }
+  .input-container .input {
+    padding: 0.8rem 1rem;
+    border: none;
+    outline: none;
+    color: var(--input-color);
+    background-color: var(--input-background-color);
+    border-radius: 0.3rem;
+    width: 100%; }
+    .input-container .input:hover {
+      background-color: var(--input-background-color-on-hover); }
+  .input-container .input-error-message {
+    display: none; }
+  .input-container.error .input-error-message {
+    position: absolute;
+    bottom: -1.6rem;
+    display: inline;
+    font-size: 1.2rem;
+    color: var(--error-message-color);
+    font-style: italic; }
+  .input-container.error .input {
+    border-color: var(--error-message-color); }
+
+.input-label {
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 100rem; }
+
+.input-label-mandatory {
+  color: #ff4a59;
+  font-size: 1.5rem; }
 
 .tabs-names-container {
   display: flex;
