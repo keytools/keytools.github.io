@@ -2666,7 +2666,9 @@ textarea {
   background: var(--linear-background);
   color: white;
   padding: 0rem 0.8rem;
-  border-radius: 0.5rem; }
+  border-radius: 0.5rem;
+  width: 9rem;
+  text-align: center; }
 
 .hash-code-value {
   font-size: 1.45rem;
@@ -2700,8 +2702,6 @@ textarea {
     border-radius: 0.5rem;
     font-size: 1.45rem;
     font-weight: 600; }
-  .calculated-hash-diff-mode-container .hash-code-algo {
-    display: inline-flex; }
   .calculated-hash-diff-mode-container .icon-button {
     opacity: 0;
     position: absolute;
