@@ -2668,7 +2668,8 @@ textarea {
   padding: 0rem 0.8rem;
   border-radius: 0.5rem;
   width: 9rem;
-  text-align: center; }
+  text-align: center;
+  flex-shrink: 0; }
 
 .hash-code-value {
   font-size: 1.45rem;
