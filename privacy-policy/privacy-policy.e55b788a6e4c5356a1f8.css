@@ -1,4 +1,5 @@
 body {
+  --linear-background: linear-gradient(to right, #f8c417, #e61972);
   --primary-color: #e61972;
   --secondary-color: #f57173;
   --focus-color: #0060df;
@@ -157,6 +158,7 @@ body {
   --main-section-background-color: var(--background-color-01); }
 
 body.dark {
+  --linear-background: linear-gradient(to right, #f8c417, #e61972);
   --primary-color: #e61972;
   --secondary-color: #f57173;
   --focus-color: #0060df;
@@ -2064,21 +2066,13 @@ input[type='submit'] {
   padding-top: 0; }
 
 h1 {
-  margin: 0 0 2rem; }
+  margin: 0 0 4rem; }
 
 .main-section {
   padding: 7rem; }
 
-.contact-container .buttons-container {
-  display: flex;
-  justify-content: end; }
-  .contact-container .buttons-container input {
-    flex: 0;
-    margin-left: 1.5rem; }
-
-.contact-container input,
-.contact-container textarea {
-  margin-bottom: 2rem; }
+h2 {
+  margin: 4rem 0; }
 
 .icon-button {
   all: initial;
@@ -2575,27 +2569,4 @@ body.hide-menu .menu-with-collapse-button-container {
   position: -webkit-sticky;
   position: sticky;
   top: 10rem; }
-
-.toast-container {
-  z-index: var(--toast-z-index);
-  position: fixed;
-  top: calc(var(--navbar-height) + 1.5rem);
-  right: -30rem;
-  width: 30rem;
-  border-radius: 0.3rem;
-  transition: right 0.3s ease-in;
-  padding: 0.8rem 1.5rem;
-  font-size: 1.5rem; }
-  .toast-container.info {
-    background-color: var(--toast-info-background-color);
-    color: var(--toast-info-color);
-    border: 1px solid var(--toast-info-border-color); }
-  .toast-container.warn {
-    background-color: var(--toast-warn-background-color);
-    color: var(--toast-warn-color);
-    border: 1px solid var(--toast-warn-border-color); }
-  .toast-container.error {
-    background-color: var(--toast-error-background-color);
-    color: var(--toast-error-color);
-    border: 1px solid var(--toast-error-border-color); }
 
