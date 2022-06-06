@@ -2680,9 +2680,13 @@ textarea {
     -moz-column-gap: 1rem;
          column-gap: 1rem; }
   .calculated-hash-consult-mode-container .icon-button {
-    opacity: 0; }
+    opacity: 0;
+    flex-shrink: 0; }
   .calculated-hash-consult-mode-container:hover .icon-button {
     opacity: 1; }
+  .calculated-hash-consult-mode-container .right {
+    display: flex;
+    align-items: center; }
 
 .hash-code-algo {
   white-space: nowrap;
@@ -2808,6 +2812,10 @@ textarea {
   .labeled-switch.on {
     background-color: var(--secondary-color);
     color: white; }
+
+.hash-generator-action-bar-buttons-container .icon-button {
+  width: 3rem !important;
+  height: 3rem !important; }
 
 .tabs-names-container {
   display: flex;
