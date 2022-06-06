@@ -567,6 +567,7 @@ li {
   overflow: hidden !important; }
 
 .expanded-tool {
+  overflow: auto;
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
