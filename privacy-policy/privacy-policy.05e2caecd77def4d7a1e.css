@@ -547,6 +547,8 @@ li {
   margin-right: 0.4rem; }
 
 @media screen and (max-width: 1024px) {
+  .expand-button,
+  .reduce-button,
   .related-tools-sidebar-container {
     display: none !important; }
   .related-articles-main-section {
@@ -559,6 +561,22 @@ li {
   .main-section {
     border-radius: 0;
     padding: 3rem; } }
+
+.expanded-tool-page {
+  height: 0 !important;
+  overflow: hidden !important; }
+
+.expanded-tool {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  z-index: 1000000 !important; }
+  .expanded-tool > * {
+    max-width: 120rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important; }
 
 @font-face {
   font-family: 'Anonymous Pro';
@@ -2569,4 +2587,10 @@ body.hide-menu .menu-with-collapse-button-container {
   position: -webkit-sticky;
   position: sticky;
   top: 10rem; }
+
+.expand-button,
+.reduce-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem; }
 
