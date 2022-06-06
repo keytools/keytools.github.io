@@ -2085,7 +2085,7 @@ input[type='submit'] {
   --tool-max-width: 78rem; }
 
 .expanded-tool > * {
-  max-width: 90rem !important; }
+  max-width: 100rem !important; }
 
 .icon-button {
   all: initial;
