@@ -2681,6 +2681,13 @@ textarea {
   .text-convertor-action-bar-container .right {
     -moz-column-gap: 0.5rem;
          column-gap: 0.5rem; }
+  .text-convertor-action-bar-container button {
+    height: 100%; }
+  .text-convertor-action-bar-container .separator-bar {
+    flex-shrink: 0;
+    width: 1px;
+    height: 2.8rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, var(--background-color-05) 35%, var(--background-color-05) 65%, rgba(0, 0, 0, 0) 100%); }
 
 .button-container.action-bar-button button {
   cursor: pointer;
@@ -2694,6 +2701,7 @@ textarea {
   padding: 0.2rem 1rem;
   white-space: nowrap; }
   .button-container.action-bar-button button:hover {
+    opacity: 1 !important;
     background-color: var(--background-color-04) !important; }
 
 .button-container button {
