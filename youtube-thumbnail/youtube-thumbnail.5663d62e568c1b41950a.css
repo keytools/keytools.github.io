@@ -2694,7 +2694,7 @@ body.hide-menu .menu-with-collapse-button-container {
   border-radius: 0.5rem;
   background-color: var(--background-color-03); }
   .thumbnail-preview-container .iconify {
-    font-size: 15rem;
+    font-size: 12rem;
     color: var(--primary-color);
     background: var(--linear-gradient); }
   .thumbnail-preview-container p {
@@ -2709,7 +2709,7 @@ body.hide-menu .menu-with-collapse-button-container {
   display: flex; }
 
 .thumbnail-preview-image {
-  max-width: 25rem; }
+  max-width: 22rem; }
 
 .input-container {
   display: flex;
