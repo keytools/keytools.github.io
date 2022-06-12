@@ -2656,6 +2656,16 @@ body.hide-menu .menu-with-collapse-button-container {
 .youtube-thumbnail-tool-container.loading .thumbnail-loader-container {
   display: flex; }
 
+.youtube-thumbnail-tool-container .youtube-thumbnail-tool-input-container {
+  position: relative; }
+  .youtube-thumbnail-tool-container .youtube-thumbnail-tool-input-container .icon-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1rem; }
+    .youtube-thumbnail-tool-container .youtube-thumbnail-tool-input-container .icon-button:hover {
+      background-color: var(--background-color-05); }
+
 .thumbnail-image-container {
   margin-top: 2.5rem;
   border-radius: 0.4rem;
