@@ -2539,7 +2539,9 @@ body.hide-menu .menu-with-collapse-button-container {
     margin-left: 1.5rem;
     overflow: hidden;
     text-overflow: ellipsis; }
-  .related-tools-item-container i {
+  .related-tools-item-container i,
+  .related-tools-item-container svg {
+    font-size: 1.8rem;
     flex-shrink: 0;
     font-size: 2rem; }
   .related-tools-item-container .tag {
