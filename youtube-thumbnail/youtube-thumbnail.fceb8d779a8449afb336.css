@@ -2696,6 +2696,7 @@ body.hide-menu .menu-with-collapse-button-container {
     color: var(--primary-color);
     background: var(--linear-gradient); }
   .thumbnail-preview-container p {
+    text-align: center;
     margin-top: 2rem;
     margin-bottom: 0;
     font-size: 1.6rem;
