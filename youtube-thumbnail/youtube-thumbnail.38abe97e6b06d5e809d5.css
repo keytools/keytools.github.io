@@ -2690,18 +2690,23 @@ body.hide-menu .menu-with-collapse-button-container {
   padding: 3rem;
   justify-content: space-around;
   border-radius: 0.5rem;
-  border: 2px dashed var(--primary-color); }
+  background-color: var(--background-color-03); }
   .thumbnail-preview-container .iconify {
     font-size: 15rem;
     color: var(--primary-color);
     background: var(--linear-gradient); }
   .thumbnail-preview-container p {
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 0;
-    color: var(--primary-color);
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-size: 1.6rem;
+    font-weight: 400;
     background: var(--linear-gradient); }
+
+.thumbnail-preview-image-container {
+  display: flex; }
+
+.thumbnail-preview-image {
+  max-width: 25rem; }
 
 .input-container {
   display: flex;
