@@ -2844,10 +2844,6 @@ textarea {
     background-color: var(--secondary-color);
     color: white; }
 
-.hash-generator-action-bar-buttons-container .icon-button {
-  width: 3rem !important;
-  height: 3rem !important; }
-
 .tabs-names-container {
   display: flex;
   align-items: center;
