@@ -2916,6 +2916,13 @@ body.dark {
     color: var(--body-color);
     text-align: center; }
 
+.hex-color-input-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-column-gap: 0.8rem;
+  grid-row-gap: 0.1rem; }
+
 .color-mixer-color-picker-button-container {
   all: initial;
   width: var(--color-mixer-button-size);
