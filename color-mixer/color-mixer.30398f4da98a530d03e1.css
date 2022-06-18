@@ -2971,8 +2971,7 @@ body.dark {
     border-radius: 0.4rem;
     display: flex;
     align-items: center;
-    justify-content: center; }
-  .color-mixer-saved-colors-container .color-mixer-saved-color {
+    justify-content: center;
     font-size: 1.7rem;
     font-weight: 600;
     color: white; }
@@ -2992,4 +2991,38 @@ body.dark {
       color: white; }
   .color-mixer-saved-colors-container .color-mixer-saved-color:hover .saved-color-action {
     opacity: 0.8; }
+
+.horizontal-scrollable-div-container-container {
+  position: relative;
+  width: 100%; }
+
+.horizontal-scrollable-div-container {
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none; }
+  .horizontal-scrollable-div-container::-webkit-scrollbar {
+    display: none; }
+  .horizontal-scrollable-div-container .arrow-left,
+  .horizontal-scrollable-div-container .arrow-right {
+    z-index: var(--text-to-type-training-arrow-z-index);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--arrow-background-color);
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+    border-radius: 100rem;
+    box-shadow: var(--box-shadow-01);
+    font-size: 2.8rem; }
+  .horizontal-scrollable-div-container .arrow-left {
+    left: 1.2rem; }
+  .horizontal-scrollable-div-container .arrow-right {
+    right: 1.2rem; }
 
