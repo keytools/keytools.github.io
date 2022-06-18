@@ -2762,14 +2762,15 @@ body.dark {
   .color-mixer-color-container:hover .color-mixer-color-actions-container {
     height: calc(var(--color-mixer-button-size) * 3 + 1.5rem); }
   .color-mixer-color-container .color-mixer-color-actions-container {
+    z-index: 1;
     height: 0;
     overflow: hidden;
     position: absolute;
-    bottom: 100%;
+    top: 100%;
     left: 0;
     display: flex;
     flex-direction: column;
-    transition: height 0.6s ease-in-out; }
+    transition: height 0.4s ease-in; }
     .color-mixer-color-container .color-mixer-color-actions-container .action-icon {
       cursor: pointer;
       flex-shrink: 0;
@@ -2781,9 +2782,10 @@ body.dark {
       height: var(--color-mixer-button-size);
       background-color: var(--background-color-03);
       border-radius: 0.4rem;
-      margin-bottom: 0.5rem;
+      margin-top: 0.5rem;
       transition: var(--transition);
       transition-property: background-color;
+      box-shadow: var(--box-shadow-01);
       -webkit-user-select: none;
          -moz-user-select: none;
           -ms-user-select: none;
