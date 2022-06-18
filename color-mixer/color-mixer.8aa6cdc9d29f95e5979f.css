@@ -2976,19 +2976,20 @@ body.dark {
     font-size: 1.7rem;
     font-weight: 600;
     color: white; }
-  .color-mixer-saved-colors-container .remove-saved-color {
+  .color-mixer-saved-colors-container .saved-color-actions {
     position: absolute;
-    top: 0.4rem;
-    right: 0.6rem;
+    top: 0.6rem;
+    right: 0.8rem; }
+  .color-mixer-saved-colors-container .saved-color-action {
     opacity: 0;
     color: white;
     transition: var(--transition);
     transition-property: opacity; }
-    .color-mixer-saved-colors-container .remove-saved-color:hover {
+    .color-mixer-saved-colors-container .saved-color-action:hover {
       opacity: 1 !important; }
-    .color-mixer-saved-colors-container .remove-saved-color .iconify {
-      font-size: 2.4rem;
+    .color-mixer-saved-colors-container .saved-color-action .iconify {
+      font-size: 2rem;
       color: white; }
-  .color-mixer-saved-colors-container .color-mixer-saved-color:hover .remove-saved-color {
+  .color-mixer-saved-colors-container .color-mixer-saved-color:hover .saved-color-action {
     opacity: 0.8; }
 
