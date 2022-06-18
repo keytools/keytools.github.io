@@ -2639,16 +2639,8 @@ body.hide-menu .menu-with-collapse-button-container {
     padding: 0 4rem; }
 
 :root {
-  --color-mixer-button-size: 4.5rem;
+  --color-mixer-button-size: 3.3rem;
   --color-mixer-button-box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.03); }
-
-.color-mixer-tool-container {
-  position: relative; }
-
-.color-mixer-colors-container {
-  position: absolute;
-  bottom: 2rem;
-  left: 2rem; }
 
 .color-mixer-result-color-container {
   width: 100%;
@@ -2681,14 +2673,24 @@ body.hide-menu .menu-with-collapse-button-container {
       cursor: pointer;
       font-size: 1.5rem; }
 
+.color-mixer-action-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .color-mixer-action-bar-container .left {
+    overflow: initial !important; }
+  .color-mixer-action-bar-container .color-mixer-result-color-hex {
+    font-size: 2rem; }
+  .color-mixer-action-bar-container .color-mixer-result-color-hex-prefix {
+    margin: 0 0.4rem 0 0.6rem; }
+
 .color-mixer-colors-container {
   display: flex;
   align-items: center;
-  -moz-column-gap: 3px;
-       column-gap: 3px; }
+  -moz-column-gap: 8px;
+       column-gap: 8px; }
   .color-mixer-colors-container .iconify {
-    font-size: 1.1rem;
-    color: white; }
+    font-size: 1.1rem; }
 
 body {
   --color-mixer-color-action-background-color: #fafafa2e;
@@ -2704,7 +2706,7 @@ body.dark {
     all: initial;
     width: var(--color-mixer-button-size);
     height: var(--color-mixer-button-size);
-    border-radius: 100rem;
+    border-radius: 0.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2738,22 +2740,19 @@ body.dark {
       justify-content: center;
       width: var(--color-mixer-button-size);
       height: var(--color-mixer-button-size);
-      background-color: var(--color-mixer-color-action-background-color);
-      border-radius: 100%;
+      background-color: var(--background-color-03);
+      border-radius: 0.4rem;
       margin-bottom: 0.5rem;
       transition: var(--transition);
       transition-property: background-color;
       -webkit-user-select: none;
          -moz-user-select: none;
           -ms-user-select: none;
-              user-select: none;
-      box-shadow: var(--color-mixer-button-box-shadow); }
+              user-select: none; }
       .color-mixer-color-container .color-mixer-color-actions-container .action-icon:hover {
-        background-color: var(--color-mixer-color-action-background-color-on-hover); }
+        background-color: var(--background-color-04); }
     .color-mixer-color-container .color-mixer-color-actions-container .iconify {
-      border-radius: 100rem;
-      color: white;
-      font-size: 3rem; }
+      font-size: 2rem; }
 
 .horizontal-swap-arrow-container {
   border-radius: 0.3rem;
@@ -2921,7 +2920,7 @@ body.dark {
   all: initial;
   width: var(--color-mixer-button-size);
   height: var(--color-mixer-button-size);
-  border-radius: 100rem;
+  border-radius: 0.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2935,27 +2934,4 @@ body.dark {
     pointer-events: none;
     font-family: 'Roboto Mono', monospace;
     color: white; }
-
-body {
-  --color-mixer-add-color-button-background-color: #fafafa2e;
-  --color-mixer-add-color-button-background-color-on-hover: #fafafa5c; }
-
-body.dark {
-  --color-mixer-add-color-button-background-color: #282c342b;
-  --color-mixer-add-color-button-background-color-on-hover: #282c345c; }
-
-.color-mixer-add-color-button-container {
-  background-color: var(--color-mixer-add-color-button-background-color);
-  border-radius: 100rem;
-  width: var(--color-mixer-button-size);
-  height: var(--color-mixer-button-size);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 0.8rem;
-  box-shadow: var(--color-mixer-button-box-shadow); }
-  .color-mixer-add-color-button-container:hover {
-    background-color: var(--color-mixer-add-color-button-background-color-on-hover); }
-  .color-mixer-add-color-button-container .iconify {
-    font-size: 2.7rem; }
 
