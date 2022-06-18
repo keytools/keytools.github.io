@@ -2677,21 +2677,22 @@ body.hide-menu .menu-with-collapse-button-container {
       font-size: 1.5rem; }
 
 .color-values-container {
-  margin-top: 2rem; }
+  margin-top: 1rem; }
 
 .color-values-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 2.5rem; }
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  row-gap: 1rem; }
   .color-values-container .color-value {
     cursor: pointer;
     border-radius: 0.3rem;
     padding: 0.4rem 1rem 0.4rem 1.5rem;
     display: flex;
     align-items: center;
-    justify-content: space-between; }
-    .color-values-container .color-value.odd {
-      background-color: var(--background-color-03); }
+    justify-content: space-between;
+    background-color: var(--background-color-03); }
     .color-values-container .color-value span {
       font-size: 1.7rem; }
     .color-values-container .color-value .label {
