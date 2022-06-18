@@ -2962,6 +2962,7 @@ body.dark {
     .color-mixer-saved-colors-container .color-mixer-saved-colors::-webkit-scrollbar {
       display: none; }
   .color-mixer-saved-colors-container .color-mixer-saved-color {
+    cursor: pointer;
     position: relative;
     height: 12rem;
     min-width: 12rem;
