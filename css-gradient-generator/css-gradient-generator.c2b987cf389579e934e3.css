@@ -3070,7 +3070,9 @@ body.hide-menu .menu-with-collapse-button-container {
 .code-container {
   border-radius: 0.4rem;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  background-color: var(--background-color-03);
+  padding-right: 1.5rem; }
   .code-container .copy-button {
     position: absolute;
     top: 0.8rem;
