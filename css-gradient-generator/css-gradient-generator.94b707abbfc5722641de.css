@@ -3122,4 +3122,6 @@ body.hide-menu .menu-with-collapse-button-container {
     font-family: 'Roboto Mono', monospace;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem; }
+  .code-container .punctuation {
+    color: var(--body-color); }
 
