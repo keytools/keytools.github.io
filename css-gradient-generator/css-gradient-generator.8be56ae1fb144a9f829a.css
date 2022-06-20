@@ -3067,3 +3067,57 @@ body.hide-menu .menu-with-collapse-button-container {
 .css-gradient-generator-css-code-container {
   margin-top: 2.2rem; }
 
+.code-container {
+  border-radius: 0.4rem;
+  overflow: hidden;
+  position: relative; }
+  .code-container .copy-button {
+    position: absolute;
+    top: 0.8rem;
+    right: 0.8rem;
+    opacity: 0;
+    transition: var(--transition);
+    transition-property: opacity;
+    height: 3.3rem;
+    width: 3.3rem; }
+    .code-container .copy-button:hover {
+      opacity: 1; }
+  .code-container:hover .copy-button {
+    opacity: 1;
+    background-color: var(--background-color-04); }
+  .code-container pre {
+    display: flex; }
+  .code-container .line-numbers {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex: 5rem 0 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color-04); }
+    .code-container .line-numbers .line-number {
+      text-align: right; }
+  .code-container code {
+    flex: 1;
+    background-color: var(--background-color-03);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    overflow: auto;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    max-height: 20rem; }
+    .code-container code::-webkit-scrollbar {
+      display: none; }
+  .code-container code,
+  .code-container .line-number {
+    font-size: 1.5rem;
+    line-height: 1.7rem; }
+  .code-container code,
+  .code-container .line-numbers {
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem; }
+
