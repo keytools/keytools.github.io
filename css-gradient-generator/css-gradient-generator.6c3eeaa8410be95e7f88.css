@@ -2679,6 +2679,16 @@ body.hide-menu .menu-with-collapse-button-container {
     .css-gradient-generator-form-container .css-gradient-position-container > * {
       flex: 1; }
 
+@media screen and (max-width: 650px) {
+  .size-option.options-container .options {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem; }
+  .css-gradient-generator-form-container .css-gradient-position-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem; } }
+
 .slider-container {
   width: 100%; }
 
