@@ -573,6 +573,7 @@ li {
   margin-right: 0.4rem; }
 
 @media screen and (max-width: 1024px) {
+  .show-tutorial-button,
   .expand-button,
   .reduce-button,
   .related-tools-sidebar-container {
