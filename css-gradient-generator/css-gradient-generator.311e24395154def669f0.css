@@ -3148,10 +3148,6 @@ body.hide-menu .menu-with-collapse-button-container {
   width: 50rem;
   transition: right 0.3s cubic-bezier(0, 0, 1, 1.15);
   border-radius: 0.5rem; }
-  @media screen and (max-width: 650px) {
-    .tool-tutorial-container {
-      right: calc((80% + 2rem) * -1);
-      width: 80%; } }
   .tool-tutorial-container h2 {
     position: absolute;
     top: 1rem;
@@ -3178,4 +3174,9 @@ body.hide-menu .menu-with-collapse-button-container {
     opacity: 1; }
   .tool-tutorial-container.shown {
     right: 1.5rem; }
+
+@media screen and (max-width: 650px) {
+  .tool-tutorial-container {
+    right: calc((80% + 2rem) * -1);
+    width: 70%; } }
 
