@@ -2822,7 +2822,7 @@ body {
   --switch-background-color: #d2d2d2; }
 
 body.dark {
-  --switch-background-color: #2d323b; }
+  --switch-background-color: #454952; }
 
 .switch-container {
   all: initial;
