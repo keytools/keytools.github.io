@@ -3048,7 +3048,6 @@ body.dark {
     position: relative;
     height: 12rem;
     min-width: 12rem;
-    max-width: 30rem;
     flex: 1;
     flex-shrink: 0;
     border-radius: 0.4rem;
@@ -3108,4 +3107,50 @@ body.dark {
     left: 1.2rem; }
   .horizontal-scrollable-div-container .arrow-right {
     right: 1.2rem; }
+
+.show-tutorial-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 5.3rem; }
+
+.tool-tutorial-container {
+  --tool-tutorial-z-index: 1000000000;
+  position: fixed;
+  z-index: var(--tool-tutorial-z-index);
+  bottom: 1.5rem;
+  right: -52rem;
+  width: 50rem;
+  transition: right 0.3s cubic-bezier(0, 0, 1, 1.15);
+  border-radius: 0.5rem; }
+  .tool-tutorial-container h2 {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    margin: 0;
+    background: var(--linear-background);
+    color: white;
+    padding: 0.3rem 0.9rem;
+    font-size: 1.35rem;
+    border-radius: 0.4rem; }
+  .tool-tutorial-container img {
+    box-shadow: var(--box-shadow-02);
+    border-radius: 0.5rem;
+    width: 100%; }
+  .tool-tutorial-container .close-button {
+    z-index: calc(var(--tool-tutorial-z-index) + 1);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    opacity: 0;
+    transition: var(--transition);
+    transition-property: opacity; }
+  .tool-tutorial-container:hover .close-button {
+    opacity: 1; }
+  .tool-tutorial-container.shown {
+    right: 1.5rem; }
+
+@media screen and (max-width: 650px) {
+  .tool-tutorial-container {
+    right: calc((80% + 2rem) * -1);
+    width: 70%; } }
 
