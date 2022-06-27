@@ -2543,7 +2543,8 @@ body.hide-menu .menu-with-collapse-button-container {
   min-width: 32rem;
   background-color: var(--background-color-02);
   padding: 2rem;
-  border-radius: 0.6rem; }
+  border-radius: 0.6rem;
+  max-height: calc(100vh - var(--navbar-height)); }
 
 .related-tools-sidebar {
   display: flex;
