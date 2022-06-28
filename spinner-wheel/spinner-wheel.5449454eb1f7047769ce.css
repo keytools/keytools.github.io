@@ -2615,7 +2615,7 @@ body.hide-menu .menu-with-collapse-button-container {
   width: 100%;
   padding: 1rem 0;
   border-radius: 0.4rem;
-  margin-top: 1.5rem;
+  margin-top: 0.7rem;
   font-weight: 600;
   background-color: var(--background-color-03);
   color: var(--text-color-03);
