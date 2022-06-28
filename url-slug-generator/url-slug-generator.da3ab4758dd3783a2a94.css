@@ -2625,8 +2625,7 @@ body.hide-menu .menu-with-collapse-button-container {
   padding: 1.2rem;
   border-radius: 0.5rem;
   overflow: auto !important;
-  display: flex;
-  justify-content: center; }
+  text-align: center; }
 
 .expand-button,
 .reduce-button {
